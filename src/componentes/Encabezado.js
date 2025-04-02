@@ -1,13 +1,15 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import "../App.css";
 
 function Encabezado() {
   return (
-    <header style={{ padding: "1rem", background: "#f4f4f4" }}>
-      <nav>
-        <Link to="/">Inicio</Link> |{" "}
-        <Link to="/departamentos">Departamentos</Link> |{" "}
-        <Link to="/platos-tipicos">Platos Típicos</Link>
+    <header className="barra-navegacion">
+      <nav className="nav-links">
+        <Link to="/" className="nav-boton">Inicio</Link>
+        <Link to="/departamentos" className="nav-boton">Departamentos</Link>
+        <Link to="/platos-tipicos" className="nav-boton">Platos Típicos</Link>
+        <Link to="/mapa" className="nav-boton">Mapa de Colombia</Link>
       </nav>
     </header>
   );
