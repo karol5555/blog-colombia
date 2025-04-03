@@ -21,7 +21,7 @@ function MapaColombia() {
 
   return (
     <div className="contenedor-principal">
-      <h1 className="titulo-morado">Mapas de Colombia 🗺️</h1>
+      <h1 className="titulo">Mapas de Colombia 🗺️</h1>
 
       {cargando ? (
         <p className="text-center text-lg">Cargando mapas...</p>

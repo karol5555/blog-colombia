@@ -15,7 +15,7 @@ function Inicio() {
 
   return (
     <div className="contenedor-inicio">
-      <h1 className="titulo-morado text-center mb-8">
+      <h1 className="titulo text-center mb-8">
         Bienvenido a Colombia 🇨🇴
       </h1>
 

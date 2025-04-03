@@ -3,9 +3,9 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Encabezado from "./componentes/Encabezado";
 import Inicio from "./paginas/Inicio";
 import Departamentos from "./paginas/Departamentos";
-import PlatosTipicos from "./paginas/PlatosTipicos"; // ✅ asegurarse que este archivo exista
-import MapaColombia from "./paginas/MapaColombia"; // opcional si ya lo tienes
-import "./App.css"; // ✅ estilos globales
+import PlatosTipicos from "./paginas/PlatosTipicos"; 
+import MapaColombia from "./paginas/MapaColombia"; 
+import "./App.css"; 
 
 function App() {
   return (

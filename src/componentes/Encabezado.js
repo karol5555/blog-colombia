@@ -1,3 +1,4 @@
+
 import React from "react";
 import { Link } from "react-router-dom";
 import "../App.css";
@@ -9,7 +10,7 @@ function Encabezado() {
         <Link to="/" className="nav-boton">Inicio</Link>
         <Link to="/departamentos" className="nav-boton">Departamentos</Link>
         <Link to="/platos-tipicos" className="nav-boton">Platos Típicos</Link>
-        <Link to="/mapa" className="nav-boton">Mapa de Colombia</Link>
+        <Link to="/mapa" className="nav-boton">Mapas Colombia</Link>
       </nav>
     </header>
   );

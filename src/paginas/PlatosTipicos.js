@@ -29,7 +29,7 @@ function PlatosTipicos() {
 
   return (
     <div className="contenedor-principal">
-      <h1 className="titulo-morado">Platos Típicos de Colombia 🍽️</h1>
+      <h1 className="titulo">Platos Típicos de Colombia 🍽️</h1>
 
       {cargando ? (
         <p className="text-center text-lg">Cargando platos típicos...</p>

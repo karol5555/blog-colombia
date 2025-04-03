@@ -45,7 +45,7 @@ function Departamentos() {
 
   return (
     <div className="contenedor-principal">
-      <h1 className="titulo-morado">Departamentos de Colombia 📦</h1>
+      <h1 className="titulo">Departamentos de Colombia </h1>
 
       {cargando ? (
         <p className="text-center text-lg">Cargando departamentos...</p>
@@ -53,12 +53,12 @@ function Departamentos() {
         <div className="grid-departamentos">
           {departamentos.map((dep) => (
             <div key={dep.id} className="tarjeta-cuadrada">
-              <strong className="nombre-departamento">🏛️ {dep.name}</strong>
+              <strong className="nombre-departamento"> {dep.name}</strong>
               <button
                 onClick={() => obtenerCiudades(dep.id)}
-                className="boton-morado"
+                className="boton"
               >
-                Ver ciudades
+                ciudades
               </button>
             </div>
           ))}
@@ -69,7 +69,7 @@ function Departamentos() {
         <div className="modal-overlay" onClick={() => setModalAbierto(null)}>
           <div className="modal-tarjeta" onClick={(e) => e.stopPropagation()}>
             <strong className="nombre-departamento">
-              🏛️ {
+               {
                 departamentos.find((d) => d.id === modalAbierto)?.name
               }
             </strong>

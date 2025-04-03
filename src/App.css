@@ -3,10 +3,11 @@
     margin: auto;
     padding: 2rem;
   }
-  
-  .titulo-morado {
+  /*general*/
+
+  .titulo {
     text-align: center;
-    color: #6a1b9a;
+    color: #000000;
     font-size: 2.5rem;
     font-weight: bold;
     margin-bottom: 2rem;
@@ -19,55 +20,82 @@
   }
   
   .tarjeta-cuadrada {
-    background-color: #f3e8ff;
+    background-color: #ffcc00;
+    border-color: #000000;
     border-radius: 15px;
     padding: 1rem;
     min-height: auto;
     height: auto;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.929);
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     gap: 0.5rem;
     overflow: hidden;
     transition: transform 0.2s;
+
+   align-items: center;
+  text-align: center;
+
+     gap: 0.5rem;
+     overflow: hidden;
+     transition: transform 0.2s;
   }
   
   
   .nombre-departamento {
-    font-size: 1.2rem;
-    color: #4a148c;
+    font-size: 1.6rem;
+    color: #000000;
+
+    display: block;
+    text-align: center;
   }
   
   .capital {
     font-size: 0.9rem;
-    color: #333;
+    color: #000000;
     margin-top: 0.3rem;
     margin-bottom: 0.5rem;
   }
   
-  .boton-morado {
-    background-color: #7e57c2;
+  .boton {
+    background-color:  #003087;
     color: white;
     border: none;
     border-radius: 8px;
-    padding: 6px 10px;
-    font-size: 0.85rem;
+    padding: 6px 6px;
+    font-size: 0.95rem;
     cursor: pointer;
     transition: background 0.2s ease-in-out;
   }
   
-  .boton-morado:hover {
-    background-color: #6a1b9a;
+  .boton:hover {
+    background-color: #3466c3;
   }
   
   .lista-ciudades {
     margin-top: 0.5rem;
     font-size: 0.85rem;
-    color: #444;
-    padding-left: 1rem;
+    color: #000000;
+    padding-left: 1.2rem;
   }
   
+  .modal-tarjeta {
+    background-color: #ffcc00;
+    padding: 2rem;
+    border-radius: 12px;
+    max-width: 500px;
+    width: 90%;
+    max-height: 90vh;
+    overflow-y: auto;
+    box-shadow: 0 0 15px rgb(0, 0, 0);
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    animation: aparecer 0.3s ease;
+  }
+  
+
   .imagen-mapa {
     width: 100%;
     max-height: 180px;
@@ -82,7 +110,7 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.75);
+    background: rgba(0, 0, 0, 0.718);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -94,16 +122,16 @@
     max-width: 95vw;
     max-height: 95vh;
     padding: 1rem;
-    background-color: #fff;
-    border-radius: 12px;
-    box-shadow: 0 0 25px rgba(255, 255, 255, 0.3);
+    background-color: #ffffff00;
+    border-radius: 1px;
+    box-shadow: 0 0 25px rgba(255, 255, 255, 0);
     overflow: auto;
   }
   
   .modal-imagen img {
     width: 100%;
     height: auto;
-    border-radius: 10px;
+    border-radius: 1px;
     display: block;
   }
   
@@ -113,23 +141,8 @@
   }
   
 
-  .modal-tarjeta {
-    background-color: #e3a8dc;
-    padding: 2rem;
-    border-radius: 12px;
-    max-width: 500px;
-    width: 90%;
-    max-height: 90vh;
-    overflow-y: auto;
-    box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-    animation: aparecer 0.3s ease;
-  }
-  
   .boton-cerrar-modal {
-    background-color: #7e57c2;
+    background-color: #C8102E;
     color: rgb(255, 255, 255);
     border: none;
     border-radius: 8px;
@@ -141,7 +154,7 @@
   }
   
   .boton-cerrar-modal:hover {
-    background-color: #6a1b9a;
+    background-color: #610414;
   }
   
   @keyframes aparecer {
@@ -156,13 +169,13 @@
   }
   
 
-  /* ----- Navegación Bonita ----- */
+  /*barra de navegacion*/
 .barra-navegacion {
-    background-color: #f3e8ff;
+    background-color: #e1a331;
     padding: 1rem 0;
     text-align: center;
     margin-bottom: 2rem;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 4px rgba(173, 43, 43, 0.689);
   }
   
   .nav-links {
@@ -173,7 +186,7 @@
   }
   
   .nav-boton {
-    background-color: #7e57c2;
+    background-color: #e4ae4d;
     color: white;
     padding: 8px 16px;
     border-radius: 10px;
@@ -183,11 +196,11 @@
   }
   
   .nav-boton:hover {
-    background-color: #6a1b9a;
+    background-color: #000000;
   }
   
 
-  /* Contenedor general de la página de inicio */
+  /*página de inicio */
 .contenedor-inicio {
     max-width: 800px;
     margin: 0 auto;
@@ -195,13 +208,24 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    
   }
   
-  /* Tarjeta especial para la sección de inicio */
+ 
   .tarjeta-inicio {
-    background-color: #f3e8ff;
+    background-color:#e8be70e5;
     border-radius: 15px;
     padding: 1.5rem;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 12px rgb(0, 0, 0);
+  }
+  
+  
+
+  body {
+    background-image: url('https://www.banderas-mundo.es/data/flags/w1600/co.png');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
   }
   
