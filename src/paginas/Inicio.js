@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import ComentariosFooter from "../componentes/ComentariosFooter"; // 👈 Se importa el componente del pie de página
 import "../App.css";
 
 function Inicio() {
@@ -38,6 +39,9 @@ function Inicio() {
       ) : (
         <p className="text-center">Cargando datos...</p>
       )}
+
+      {/* Pie de página con formulario de comentarios */}
+      <ComentariosFooter />
     </div>
   );
 }
