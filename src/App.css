@@ -20,7 +20,7 @@
   }
   
   .tarjeta-cuadrada {
-    background-color: #ffcc00;
+    background-color: #ffffffd5;
     border-color: #000000;
     border-radius: 15px;
     padding: 1rem;
@@ -229,7 +229,7 @@
     background-repeat: no-repeat;
   }
   
- /* pie de página con diseño similar a tarjeta-inicio */
+ /* pie de página */
 .footer-comentarios {
   max-width: 800px;
   margin: 3rem auto;
@@ -282,7 +282,7 @@
 }
 
 
-/* 💬 Comentarios - botón y animación destello */
+/*Comentarios - botón y animación de destello */
 .boton-morado {
   background-color: #ff0000;
   color: white;
@@ -316,12 +316,12 @@
 
 /* Scroll propio para la lista de comentarios */
 .scroll-comentarios {
-  max-height: 300px;       /* puedes ajustar el alto aquí */
+  max-height: 300px;      
   overflow-y: auto;
   padding-right: 0.5rem;
 }
 
-/* Estilo opcional para el scroll */
+
 .scroll-comentarios::-webkit-scrollbar {
   width: 6px;
 }

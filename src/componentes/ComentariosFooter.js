@@ -37,11 +37,11 @@ function ComentariosFooter() {
       setContenido("");
       await obtenerComentarios();
 
-      // Resaltar el nuevo comentario
+      // Resalta el nuevo comentario
       const nuevo = await fetch("http://localhost:3001/api/comentarios");
       const nuevosDatos = await nuevo.json();
       if (nuevosDatos.length > 0) {
-        const nuevoId = nuevosDatos[0].id; // primero si están ordenados por fecha DESC
+        const nuevoId = nuevosDatos[0].id; 
         setComentarioDestacadoId(nuevoId);
         setTimeout(() => setComentarioDestacadoId(null), 1000);
       }

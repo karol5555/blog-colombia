@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import ComentariosFooter from "../componentes/ComentariosFooter"; // 👈 Se importa el componente del pie de página
+import ComentariosFooter from "../componentes/ComentariosFooter"; 
 import "../App.css";
 
 function Inicio() {

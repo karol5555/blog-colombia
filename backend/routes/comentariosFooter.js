@@ -7,11 +7,11 @@ const pool = new Pool({
   user: "postgres",
   host: "localhost",
   database: "blog_colombia",
-  password: "123", // reemplaza si tienes otra contraseña
+  password: "123", 
   port: 5432,
 });
 
-// 📝 Ruta para guardar comentarios
+// Ruta para guardar comentarios
 router.post("/comentarios", async (req, res) => {
   const { autor, contenido } = req.body;
   try {
@@ -26,7 +26,7 @@ router.post("/comentarios", async (req, res) => {
   }
 });
 
-// 📄 Ruta para obtener comentarios
+//Ruta para obtener comentarios
 router.get("/comentarios", async (req, res) => {
   try {
     const result = await pool.query(
